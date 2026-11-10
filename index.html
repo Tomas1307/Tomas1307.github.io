@@ -4,7 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tomás Acosta Bernal</title>
-<meta name="description" content="Lead AI Engineer at Konecto. Voice agents, retrieval and speech anti-spoofing research. NLP instructor at Universidad de los Andes.">
+<meta name="description" content="Lead AI Engineer at Konecto. I build full-stack products that people and AI agents use: voice agents, MCP servers, evals and retrieval. NLP instructor at Universidad de los Andes.">
+<meta property="og:title" content="Tomás Acosta Bernal">
+<meta property="og:description" content="Full-stack AI engineer: products for people and agents, voice agents, MCP servers, evals and retrieval.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tomas1307.github.io/">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/69702936?v=4">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -131,13 +136,14 @@ footer{margin-top:60px;padding-top:16px;border-top:1px solid var(--rule);font-fa
 </nav>
 
 <section id="p-about" role="tabpanel" aria-labelledby="t-about" tabindex="-1">
-  <p>I lead AI engineering at <a href="https://konecto.ai">Konecto</a>, where we build voice agents that answer real customer calls for enterprise clients across the United States and Canada, in English, Spanish and French. I decide how those agents are designed, evaluated, deployed and improved, and I lead the engineering team that builds them.</p>
-  <p>At Universidad de los Andes I teach the master's courses on natural language processing. My research is on detecting synthetic and partially spoofed speech in Spanish, and I have also published on computer vision for environmental monitoring and worked on reinforcement learning for scheduling.</p>
+  <p>I lead AI engineering at <a href="https://konecto.ai">Konecto</a>, where we build voice agents that answer real customer calls for enterprise clients in English, Spanish and French. I own every AI decision, from how agents are designed and evaluated to how they are deployed and improved. I work directly with clients, and I take products from zero to one myself, building both the Python backend and the React/TypeScript front end.</p>
+  <p>More and more of what I build is used by AI agents, not just by people. That includes MCP servers, APIs that agents call at runtime, evals that score agents on real calls, and docs written for coding agents.</p>
+  <p>At Universidad de los Andes I teach master's courses on intelligent agents and natural language processing to more than 200 students. My research is on detecting synthetic and partially spoofed speech in Spanish. I have also published on computer vision for environmental monitoring and worked on reinforcement learning for scheduling.</p>
 
   <div class="stats">
     <div class="stat"><b>$150K</b><span>saved per year by replacing a voice-AI vendor with our own platform</span></div>
     <div class="stat"><b>25+</b><span>voice agents in production, up to 1,000 calls a day</span></div>
-    <div class="stat"><b>5 s → 0.7 s</b><span>retrieval latency after moving to pgvector hybrid search</span></div>
+    <div class="stat"><b>3 weeks</b><span>to ship a 94K-line app with an MCP server and 783 tests, using parallel coding agents</span></div>
     <div class="stat"><b>$0.45 → $0.11</b><span>cost per call minute after restructuring prompts</span></div>
     <div class="stat"><b>240,995</b><span>utterances in MARSA, our Spanish anti-spoofing corpus</span></div>
     <div class="stat"><b>93.4%</b><span>mAP@50 detecting illegal mining camps from aerial thermal video</span></div>
@@ -152,12 +158,12 @@ footer{margin-top:60px;padding-top:16px;border-top:1px solid var(--rule);font-fa
 
   <h3>Technologies</h3>
   <dl class="tech">
-    <dt>LLMs &amp; agents</dt><dd>OpenAI, Anthropic, Gemini, open models (Llama, Qwen, Nemotron), tool calling, MCP, LangChain, LangGraph, Langfuse</dd>
+    <dt>LLMs &amp; agents</dt><dd>MCP servers, tool calling, multi-agent systems, LLM evaluation, Claude Code, Codex, OpenAI, Anthropic, Gemini, open models (Llama, Qwen, Nemotron), LangChain, LangGraph, Langfuse</dd>
     <dt>Retrieval</dt><dd>PostgreSQL + pgvector, hybrid search, Reciprocal Rank Fusion, re-ranking, Azure AI Search, FAISS</dd>
     <dt>Speech</dt><dd>Deepgram, ElevenLabs, WebRTC, voice cloning (Fish Speech, Qwen3-TTS, OpenVoice), forced alignment, NISQA</dd>
     <dt>ML</dt><dd>PyTorch, Hugging Face, fine-tuning (LoRA, PEFT), YOLO, reinforcement learning</dd>
-    <dt>Backend &amp; infra</dt><dd>Python, FastAPI, Redis, Docker, Azure, AWS, GitHub Actions</dd>
-    <dt>Frontend</dt><dd>React, TypeScript, React Flow</dd>
+    <dt>Backend &amp; infra</dt><dd>Python, Go, FastAPI, SQLAlchemy, PostgreSQL, Redis, SSE / WebSockets, Docker, Azure, AWS, GitHub Actions</dd>
+    <dt>Frontend</dt><dd>React 19, TypeScript, Vite, Zustand, React Flow</dd>
   </dl>
 </section>
 
@@ -176,7 +182,7 @@ footer{margin-top:60px;padding-top:16px;border-top:1px solid var(--rule);font-fa
 
   <h3>At Universidad de los Andes</h3>
   <div class="cards">
-    <div class="card"><div class="k">Teaching</div><h4>Fundamentals of NLP and Advanced NLP</h4><p>Master's-level courses: Transformers, embeddings, fine-tuning, retrieval-augmented generation and tool-using agents. I design the course projects, write the rubrics and give each team technical feedback.</p></div>
+    <div class="card"><div class="k">Teaching</div><h4>Intelligent Agents, Fundamentals of NLP and Advanced NLP Models</h4><p>Master's-level courses taught to 200+ students across three semesters: Transformers, embeddings, fine-tuning, retrieval-augmented generation and tool-using agents. I design the course projects, write the rubrics and give each team technical feedback.</p></div>
     <div class="card"><div class="k">Research</div><h4>Speech anti-spoofing for Spanish</h4><p>Building datasets and methods to detect cloned and partially spoofed voices across Latin American and Spanish accents.</p></div>
   </div>
 </section>
@@ -185,11 +191,18 @@ footer{margin-top:60px;padding-top:16px;border-top:1px solid var(--rule);font-fa
   <h2>Projects</h2>
   <p class="lede">Most of this work is in private repositories, so it is described by what it does rather than by name.</p>
 
+  <h3>Built for agents</h3>
+  <div class="cards">
+    <div class="card"><div class="k">MCP server</div><h4>Knowledge cockpit that agents read and write</h4><p>A full-stack app that ingests meeting transcripts and tracks tasks, decisions and follow-ups. Its MCP server lets Claude Code and Claude Desktop query and update it, every answer cites its sources, and the UI updates live when an agent changes something. Built in three weeks with parallel coding agents.</p><div class="n"><span class="chip">MCP</span><span class="chip">FastAPI</span><span class="chip">pgvector</span><span class="chip">React 19</span><span class="chip">SSE</span><span class="chip m">783 tests</span></div></div>
+    <div class="card"><div class="k">AI-native product</div><h4>AI project-management platform</h4><p>Built in three weeks. LLM agents turn meeting transcripts into tasks, triage and assign work by team capacity, flag delivery risks and write standups, using a tool-use loop over whitelisted queries rather than raw SQL.</p><div class="n"><span class="chip">FastAPI</span><span class="chip">React 19</span><span class="chip">WebSockets</span><span class="chip">Tool use</span><span class="chip m">103 endpoints</span></div></div>
+    <div class="card"><div class="k">Docs for machines</div><h4>Coding-agent skills library</h4><p>26 skills, 12 subagents and guard hooks that encode our architecture standards and quality gates, so coding agents build every project the same way. Each repository also keeps an LLM-maintained wiki that agents read before they touch the code.</p><div class="n"><span class="chip">Claude Code</span><span class="chip">Subagents</span><span class="chip">Hooks</span></div></div>
+  </div>
+
   <h3>Production systems</h3>
   <div class="cards">
     <div class="card"><div class="k">Platform</div><h4>In-house voice-agent platform</h4><p>Replaced a third-party voice-AI vendor, saving about $150K a year at 300 to 1,000 calls a day. A multi-tenant control plane with a visual routing canvas, environment promotion from development to production, and post-call playbooks that the agents learn from.</p><div class="n"><span class="chip">React</span><span class="chip">FastAPI</span><span class="chip">PostgreSQL</span><span class="chip m">$150K / year</span></div></div>
     <div class="card"><div class="k">Real time</div><h4>Voice worker</h4><p>The service that runs every call: streaming speech-to-text and text-to-speech over WebRTC, voice-activity and turn detection, LLM tool calling, and handoffs between specialist agents. Deployed per client.</p><div class="n"><span class="chip">WebRTC</span><span class="chip">STT / TTS</span><span class="chip">VAD</span><span class="chip">Tool calling</span></div></div>
-    <div class="card"><div class="k">Enterprise client</div><h4>Customer-support voice agents for a manufacturer</h4><p>Agents for the US and Canada in English, Spanish and French, covering nine product lines with 16+ callable tools and CRM ticketing. Moved the knowledge base to PostgreSQL + pgvector with hybrid retrieval, query expansion and Reciprocal Rank Fusion, and restructured the prompts from 15K to 5K tokens per call.</p><div class="n"><span class="chip">pgvector</span><span class="chip">RRF</span><span class="chip">Salesforce</span><span class="chip m">5 s → 0.7 s</span><span class="chip m">$0.45 → $0.11 / min</span></div></div>
+    <div class="card"><div class="k">Enterprise client</div><h4>Customer-support voice agents for an enterprise client</h4><p>Multilingual agents with 16+ callable tools and CRM ticketing. Moved the knowledge base to PostgreSQL + pgvector with hybrid retrieval, query expansion and Reciprocal Rank Fusion, and restructured the prompts from 15K to 5K tokens per call.</p><div class="n"><span class="chip">pgvector</span><span class="chip">RRF</span><span class="chip">Salesforce</span><span class="chip m">5 s → 0.7 s</span><span class="chip m">$0.45 → $0.11 / min</span></div></div>
     <div class="card"><div class="k">Knowledge</div><h4>Document-to-RAG ingestion platform</h4><p>Turns technical manuals, including tables and diagrams, into retrieval-ready chunks in an 8-stage pipeline across 7 LLM providers. Context caching cut its LLM cost by 10x.</p><div class="n"><span class="chip">Gemini</span><span class="chip">OpenAI</span><span class="chip">Claude</span><span class="chip">pgvector HNSW</span><span class="chip m">10x cheaper</span></div></div>
     <div class="card"><div class="k">Feedback loop</div><h4>Post-call root-cause analysis</h4><p>Reads call transcripts and classifies why a call escalated (missing knowledge, protocol violation, hallucination), and feeds the fixes back into the knowledge base and the prompts.</p><div class="n"><span class="chip">Nemotron</span><span class="chip">Deepgram</span><span class="chip">LLM pipelines</span></div></div>
     <div class="card"><div class="k">Quality</div><h4>Voice-quality evaluation platform</h4><p>Initiated and directed with the team. Scores agent pronunciation and audio in a fail-safe multi-stage pipeline with forced alignment, GOP, WER and DTW.</p><div class="n"><span class="chip">Forced alignment</span><span class="chip">WER</span><span class="chip">NISQA</span></div></div>
@@ -220,7 +233,7 @@ footer{margin-top:60px;padding-top:16px;border-top:1px solid var(--rule);font-fa
 
   <div class="pub g">
     <div class="t">Eyes in the Sky: Deep Learning Processing of Airborne Sensor Imagery for Environmental Monitoring in the Colombian Amazon <span class="status">published</span></div>
-    <div class="a">T. Acosta-Bernal, S. Romero, J.A. Carrasquilla, J.P. Reyes, H.M. Núñez, M. Linares-Vásquez, A. Zabala-López · <span class="v">2025 IEEE International Workshop on Technologies for Defense and Security (TechDefense)</span>, Rome</div>
+    <div class="a">T. Acosta-Bernal, S. Romero, J.A. Carasquilla, J.P. Reyes, H.M. Núñez, M. Linares-Vásquez, A. Zabala-López · <span class="v">2025 IEEE International Workshop on Technologies for Defense and Security (TechDefense)</span>, Rome</div>
     <div class="x"><a href="https://doi.org/10.1109/TECHDEFENSE67306.2025.11721025">doi:10.1109/TECHDEFENSE67306.2025.11721025</a><a href="https://github.com/Tomas1307/FLIR_GPF2">code</a></div>
     <p>Illegal mining camps in the Amazon are hard to find from the ground. We trained YOLO detectors on aerial thermal (FLIR) video, comparing preprocessing strategies and hyperparameter configurations to favor recall, since a missed camp costs more than a false alarm. The best configuration reached 93.4% mAP@50.</p>
   </div>
